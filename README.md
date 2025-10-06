@@ -9,7 +9,13 @@ Symfony is a PHP framework for web and console applications and a set of reusabl
 
 This template makes it very easy to deploy Symfony. It includes an app service, a worker service and a Postgres database.
 
+After you deploy the template, you can open the public URL of your **railway-app** service and add `/health` in your browser. This endpoint should show that the status is up. Now you are free to add your own pages, API routes, scheduled tasks, commands and business logic. Happy coding!
+
+
 ## Common Use Cases
+
+Symfony can be used for a variety of use cases, including
+
 - Web applications
 - API-driven backends
 - Microservices
@@ -22,18 +28,18 @@ This template includes all the dependencies you need to get started: an app serv
 
 ### Deployment Dependencies
 
-- [Symfony: Installation & Setup](https://symfony.com/doc/current/setup.html) - how to set up Symfony
-- [Symfony: Creating pages](https://symfony.com/doc/current/page_creation.html) - how to create your first page
-- [Symfony: Official documentation](https://symfony.com/doc) - for all further information
+- **[Symfony: Installation & Setup](https://symfony.com/doc/current/setup.html)** - how to set up Symfony
+- **[Symfony: Creating pages](https://symfony.com/doc/current/page_creation.html)** - how to create your first page
+- **[Symfony: Official documentation](https://symfony.com/doc)** - for all further information
 
 ### Implementation Details
 
 #### Architecture
 
 This template deploys 3 services:
-- App Service: Main instance serving your web pages and APIs
-- Worker Service: Background worker processes for running jobs, scheduled tasks etc.
-- PostgreSQL: Database for storing your application data
+- **App Service:** Main instance serving your web pages and APIs
+- **Worker Service:** Background worker processes for running jobs, scheduled tasks etc.
+- **PostgreSQL:** Database for storing your application data
 
 Workers are independent of the main app, allowing you to scale them horizontally for higher performance.
 
